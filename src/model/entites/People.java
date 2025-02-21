@@ -6,13 +6,15 @@ public class People {
 	private Integer age;
 	private String andress;
 	private String bloodType;
+	private String phoneNumber;
 
-	public People(String name, String gender, Integer age, String andress, String bloodType) {
+	public People(String name, String gender, Integer age, String andress, String bloodType, String phoneNumber) {
 		this.name = name;
 		this.gender = gender;
 		this.age = age;
 		this.andress = andress;
 		this.bloodType = bloodType;
+		this.phoneNumber = phoneNumber;
 	}
 
 	public String getName() {
@@ -55,8 +57,12 @@ public class People {
 		this.bloodType = bloodType;
 	}
 
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
 
- 
-	
-	
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
 }
